@@ -1,0 +1,149 @@
+:root {
+    --green: #008753;
+    --white: #ffffff;
+    --black: #000000;
+    --light-gray: #f0f0f0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    color: var(--black);
+}
+
+header {
+    background-color: var(--green);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 20px solid var(--white);
+}
+
+header h1 {
+    margin: 0;
+    
+}
+
+main {
+    position: relative;
+    min-height: calc(92vh - 120px);
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data,
+.weather {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--white);
+    border: 1px solid var(--green);
+    font-size: 0.9rem;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .data,
+    .weather {
+        flex: 0.%;
+        margin: 1rem;
+        background-color: rgba(255, 255, 255, 0.6);
+        border: 1px solid var(--green);
+        border-radius: 3%;
+        box-shadow: 0 4px 10px rgb(17, 17, 17);
+        z-index: 1;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2 {
+        background-color: var(--green);
+    }
+
+    .data h2 {
+        background-color: var(--green);
+    }
+
+
+    .weather h2::after {
+        content: "";
+        margin-left: 0.5rem;
+    }
+
+    footer {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .weather {
+        position: static;
+    }
+
+    .weather h2::after {
+        content: none;
+    }
+}
