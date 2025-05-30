@@ -1,0 +1,86 @@
+
+/* Apply styles only when screen is 768px or wider */
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem ;
+        background-color:#007BFF;
+        color: white;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav.nav-menu {
+        display: flex !important;
+        gap: 1.5rem;
+    }
+
+    nav.nav-menu ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav.nav-menu li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+    }
+
+    nav.nav-menu a.active,
+    nav.nav-menu a:hover {
+        background-color: #0056b3;
+        border-radius: 5px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    figure {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    figure img {
+        max-width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0.5rem;
+    }
+/* Footer */
+footer {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+}
