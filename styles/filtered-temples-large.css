@@ -1,14 +1,12 @@
-
-/* Apply styles only when screen is 768px or wider */
 @media screen and (min-width: 768px) {
 
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem ;
-        background-color:#007BFF;
-        color: white;
+        padding: 1rem;
+        background-color: var(--primary-color);
+        color: var(--light-text);
     }
 
     header h1 {
@@ -29,14 +27,14 @@
 
     nav.nav-menu li a {
         text-decoration: none;
-        color: white;
+        color: var(--light-text);
         font-weight: bold;
         padding: 0.5rem 1rem;
     }
 
     nav.nav-menu a.active,
     nav.nav-menu a:hover {
-        background-color: #0056b3;
+        background-color: var(--hover-color);
         border-radius: 5px;
     }
 
@@ -71,16 +69,16 @@
         border-bottom: 1px solid #ccc;
         margin-bottom: 0.5rem;
     }
-/* Footer */
-footer {
-    background-color: #007BFF;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
 
-footer p {
-    font-size: 0.9rem;
-}
+    footer {
+        background-color: var(--primary-color);
+        color: var(--light-text);
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
 }
