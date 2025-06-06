@@ -15,9 +15,15 @@ body {
 }
 
 header {
-    border-bottom: 3px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     margin-bottom: 2rem;
+    border-bottom: 3px solid var(--primary-color);
 }
+
+header img {
+    height: auto; }
 
 h1,
 h2,
