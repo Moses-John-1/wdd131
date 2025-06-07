@@ -2,28 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="author" content="Moses John">
-    <meta name="description" content="Submit a detailed product review including satisfaction level, preferences, and suggestions.">
-    <title> Product Feedback Form | Product Review </title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/form.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Moses John" />
+    <meta name="description" content="Fill out this form to provide your product feedback, including ratings, favorite features, and improvement suggestions." />
+    <title>Product Feedback Form | Product Review</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/form.css" />
     <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
     <header class="header">
         <h1>Product Review</h1>
-        </header>
+    </header>
 
     <main>
-        <h1>Product Review</h1>
         <form method="get" action="review.html">
             <label for="productName">Product Name</label>
             <select id="productName" name="productName" required>
                 <option value="" disabled selected>Choose a Product ...</option>
-                
             </select>
 
             <fieldset>
@@ -42,8 +40,7 @@
                 <legend>Which features did you find useful in the product?</legend>
                 <label><input type="checkbox" id="durability" name="features" value="Durability" /> Durability</label>
                 <label><input type="checkbox" id="ease" name="features" value="Ease of Use" /> Ease of Use</label>
-                <label><input type="checkbox" id="performance" name="features" value="Performance" />
-                    Performance</label>
+                <label><input type="checkbox" id="performance" name="features" value="Performance" /> Performance</label>
                 <label><input type="checkbox" id="design" name="features" value="Design" /> Design</label>
             </fieldset>
 
