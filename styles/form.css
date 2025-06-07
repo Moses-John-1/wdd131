@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #0077cc;
+    --primary-dark: #005fa3;
+    --primary-hover: #004a80;
+    --text-color: #1a1919;
+}
 
 * {
     box-sizing: border-box;
@@ -8,7 +14,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8;
-    color: #333;
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +23,7 @@ body {
 
 /* Header */
 .header {
-    background-color: #00aaff;
+    background-color: var(--primary-color);
     padding: 1rem;
     text-align: center;
     width: 100%;
@@ -47,7 +53,7 @@ legend {
     margin-top: 15px;
     font-weight: 600;
     display: block;
-    color: #333;
+    color: var(--text-color);
 }
 
 input[type="text"],
@@ -61,13 +67,14 @@ textarea {
     border: 1px solid #ccc;
     font-size: 1em;
     transition: border-color 0.3s;
+    color: var(--text-color);
 }
 
 input[type="text"]:focus,
 input[type="date"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #00aaff;
+    border-color: var(--primary-color);
     outline: none;
 }
 
@@ -84,7 +91,7 @@ input[type="radio"] {
 
 /* Submit Button */
 input[type="submit"] {
-    background-color: #0077cc;
+    background-color: var(--primary-dark);
     color: #fff;
     padding: 12px;
     margin-top: 25px;
@@ -97,12 +104,12 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #005fa3;
+    background-color: var(--primary-hover);
 }
 
 /* Footer */
 footer {
-    background: #00aaff;
+    background: var(--primary-color);
     color: #fff;
     width: 100%;
     padding: 20px 0;
@@ -110,7 +117,6 @@ footer {
     font-size: 0.9em;
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .optional {
     color: #666;
