@@ -89,6 +89,12 @@ input[type="radio"] {
     transform: scale(1.2);
 }
 
+.required {
+    color: #ad1a1a;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
 /* Submit Button */
 input[type="submit"] {
     background-color: var(--primary-dark);
