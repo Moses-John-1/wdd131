@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SmartSave - Learn how to save and grow your money wisely.">
+    <meta name="author" content="Moses John">
+    <title>SmartSave | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/smartsave.css">
+    <script src="scripts/smartsave.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="images/smartSave logo.webp" alt="SmartSave Logo" class="logo" width="150" loading="lazy" />
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Save Smart. Live Free.</h2>
+            <p>Empowering young adults with the knowledge to save, invest, and achieve financial freedom.</p>
+            <a href="learn.html" class="btn">Explore Financial Tips</a>
+        </section>
+
+        <section class="about">
+            <h2>Why SmartSave?</h2>
+            <p>We make financial literacy simple. Learn how compound interest, smart saving habits, and goal setting can
+                help you build a better future.</p>
+        </section>
+
+        <section class="daily-tip">
+            <h2>💡 Tip of the Day</h2>
+            <p id="daily-tip">Loading tip...</p>
+        </section>
+
+        <section class="calculator">
+            <h2>📈 Compound Interest Calculator</h2>
+            <form id="calc-form">
+                <label for="principal">Initial Amount ($)</label>
+                <input type="number" id="principal" required />
+            
+                <label for="rate">Interest Rate (%)</label>
+                <input type="number" id="rate" required />
+            
+                <label for="years">Years</label>
+                <input type="number" id="years" required />
+            
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="calc-result"></div>
+        </section>
+
+        <section class="features">
+            <h2>Our Core Principles</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <img src="images/smartsave1.webp" alt="Save Smart" loading="lazy"/>
+                    <h3>Save Smart</h3>
+                    <p>Learn how to spend less and save more—strategically.</p>
+                </div>
+                <div class="card">
+                    <img src="images/smartsave2.webp" alt="Start Early" loading="lazy" />
+                    <h3>Start Early</h3>
+                    <p>The sooner you start, the more your money can grow.</p>
+                </div>
+                <div class="card">
+                    <img src="images/smartsave3.webp" alt="Grow Wisely" loading="lazy" />
+                    <h3>Grow Wisely</h3>
+                    <p>Let your savings work for you through smart investing.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Moses John</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+    
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn smart saving, investing, and budgeting on SmartSave.">
+    <meta name="author" content="Moses John">
+    <title>SmartSave | Learn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/smartsave.css" />
+    <script src="scripts/learn.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="images/smartSave logo.webp" alt="SmartSave Logo" class="logo" width="150" />
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn.html" class="active">Learn</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="learn-intro">
+            <h2>📚 Learn Financial Basics</h2>
+            <p>Empower yourself with the knowledge to make smart financial choices. Explore savings tips, budgeting
+                skills, and investment strategies.</p>
+        </section>
+
+        <section class="learning-cards">
+            <div class="card">
+                <h3>💵 Saving Wisely</h3>
+                <p>Discover how to build an emergency fund, set savings goals, and make saving a habit.</p>
+            </div>
+
+            <div class="card">
+                <h3>📊 Budgeting Basics</h3>
+                <p>Learn how to create and stick to a budget using tools like the 50/30/20 rule.</p>
+            </div>
+
+            <div class="card">
+                <h3>📈 Intro to Investing</h3>
+                <p>Understand compound interest, stock market basics, and how to grow your wealth over time.</p>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <h2>🧠 Quick Quiz: Are You Money Smart?</h2>
+            <button id="start-quiz">Start Quiz</button>
+            <div id="quiz-box" style="display: none;">
+                <p id="question"></p>
+                <div id="answers"></div>
+                <button id="next-btn" style="display: none;">Next</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Moses John</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+    
+</body>
+
+</html>
